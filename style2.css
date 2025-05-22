@@ -58,7 +58,10 @@ nav h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 5%;
+  padding-top: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0;
   max-width: 1200px;
   margin: auto;
   flex-wrap: wrap;
@@ -112,7 +115,58 @@ nav h1 {
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
+.links{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 0;
 
+}
+
+.links img{
+    height: 30px;
+
+}
+.fb{
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 110px;
+    box-shadow: 0 0 12px 3px #68bafd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.fb:hover,.tele:hover ,.git:hover,.medium:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 2px #68bafd;
+}
+
+
+.tele,.git{
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 10px;
+    box-shadow: 0 0 12px 3px #68bafd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.git,.fb,.tele,.medium{
+  border-color: #68bafd;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.medium{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+    box-shadow: 0 0 12px 3px #68bafd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
