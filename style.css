@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  background: linear-gradient(90deg, #162038, #2241a5);
   color: white;
 }
 
@@ -16,7 +16,7 @@ body {
 
 
 nav {
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  background: linear-gradient(90deg, #162038, #2241a5);
   color: white;
   padding: 2rem 2rem;
   display: flex;
@@ -192,7 +192,7 @@ nav h1 {
   border-color: blue;
   border-style: none;
   border-width: 2px;
-  background: linear-gradient(90deg, #588ebb, #2d56de);
+  background: linear-gradient(90deg, #1f3259, #4e68bc);
   padding-top: 30px;
   padding-bottom: 30px;
   
@@ -227,7 +227,7 @@ nav h1 {
   border-style: solid;
   margin-right: 70px;
   margin-left: 70px;
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  background: linear-gradient(90deg, #212d69, #3150b7);
   font-size: 10px;
   transition: transform 0.7s ease;
   transform-style: preserve-3d;
