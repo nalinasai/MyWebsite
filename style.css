@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, #162038, #365bd2);
+  background-color: rgb(2, 2, 37);
   color: white;
 }
 
@@ -53,8 +53,8 @@ nav h1 {
 }
 
 .navlink:hover {
-  color: #68bafd;
-  text-decoration: #68bafd;
+  color: #138aeb;
+  text-decoration: #138aeb;
 }
 
 .myimage img:hover{
@@ -93,9 +93,13 @@ nav h1 {
   width: 90%;
   
   border-radius: 50%;
-  box-shadow: 0 0 50px rgba(120, 240, 240, 0.989);
+  
   transition: transform 0.7s ease;
-  transform-style: preserve-3d;
+  transform-style: solid;
+  border-width: 3px;
+  border-color: #1a90f1;
+  border-style: solid;
+  box-shadow: 0 0 24px 10px #68bafd;
 }
 
 .hello {
@@ -152,16 +156,14 @@ nav h1 {
 .tele:hover,
 .git:hover,
 .medium:hover,
-.whatsapp:hover,
-.cvbutton:hover {
+.whatsapp:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px 2px #68bafd;
 }
 
 
 .tele,
-.git,
-.cvbutton {
+.git{
   border-radius: 50%;
   margin-right: 20px;
   margin-left: 10px;
@@ -170,13 +172,30 @@ nav h1 {
   cursor: pointer;
 }
 
+.cvbutton{
+  background-color: rgb(40, 85, 232); 
+  color: white; 
+  height: 35px; 
+  cursor: pointer; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  border-radius: 10px; 
+  border: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+
+.cvbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 5px #319bf2;
+}
+
+
 .git,
 .fb,
 .tele,
-.medium,
-
-.cvbutton {
-  border-color: #68bafd;
+.medium{
+  border-color: #0b88ef;
   border-width: 3px;
   border-style: solid;
 }
@@ -187,7 +206,7 @@ nav h1 {
   width: 30px;
   margin-right: 20px;
   margin-left: 10px;
-  box-shadow: 0 0 12px 3px #68bafd;
+  box-shadow: 0 0 20px 5px #319bf2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -199,19 +218,22 @@ nav h1 {
 }
 
 .aboutme {
+  /*border: blue 2px solid;*/
   
-  margin-bottom: 80px;
+}
+.about{
+  /*border: red 2px solid;*/
+  
+  margin-bottom: 40px;
   display: flex;
-  border: blue 2px solid;
+  
   width: 86%;
   margin-left: auto;
   margin-right: auto;
- 
+  margin-top: 30px;
   padding-top: 20px;
-  padding-bottom: 30px;
-  
+  padding-bottom: 0px;
 }
-
 .abouth1 {
   text-align: center;
   margin-top: 10px;
@@ -228,7 +250,7 @@ nav h1 {
   border-width: 5px;
   border-color: #1a90f1;
   border-style: solid;
-  box-shadow: 0 0 24px 10px #68bafd;
+  box-shadow: 0 0 24px 8px #68bafd;
 }
 
 .aboutdiv {
@@ -237,14 +259,18 @@ nav h1 {
   /*border-color: blueviolet;*/
   border-style: none;
   width: 60%;
+  border-width: 5px;
+  border-color: #1a90f1;
+  border-style: solid;
+  box-shadow: 0 0 24px 10px #68bafd;
   
-  background: linear-gradient(90deg, rgb(2, 2, 116), rgb(49, 49, 214),rgb(87, 136, 226));
   font-size: 10px;
   transition: transform 0.7s ease;
   transform-style: preserve-3d;
   border-radius: 30px;
   cursor: pointer;
   padding: 20px;
+  margin-left: 90px;
 
 }
 
@@ -259,24 +285,25 @@ nav h1 {
 }
 
 .contact{
-  border: red 2px solid;
+  /*border: red 2px solid;*/
   width: 86%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  
+  margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 .details{
-  border: yellow 2px solid;
+  /*border: yellow 2px solid;*/
   width: 45%;
-  padding: 20px;
+  
 }
 
 
 .formdetils{
-  border: purple 2px solid;
+  /*border: purple 2px solid;*/
   width: 55%;
 }
 
@@ -336,3 +363,80 @@ nav h1 {
   transform: scale(1.1);
   box-shadow: 0 0 20px 2px #68bafd;
 }
+
+.form input, .form textarea{
+  display: block;
+  width: 80%;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.form input,textarea{
+  height: 45px;
+  margin-bottom: 20px;
+}
+.form textarea{
+  height: 100px;
+}
+
+.submitbtn{
+  background-color: rgb(40, 85, 232); 
+  color: white; 
+  height: 35px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  border-radius: 10px; 
+  border: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+}
+.submitbtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 2px #68bafd;
+}
+
+.education{
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: blue 2px solid;*/
+  margin-bottom: 50px;
+  margin-top: 80px;
+  
+}
+
+.edu{
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /*border: red 2px solid;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.child{
+
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-width: 5px;
+  border-color: #1a90f1;
+  border-style: solid;
+  box-shadow: 0 0 24px 10px #68bafd;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+ .child:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+

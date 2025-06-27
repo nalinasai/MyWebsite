@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,8 @@
 }
 
 body {
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  background: linear-gradient(90deg, #162038, #365bd2);
+  
   color: white;
 }
 
@@ -16,34 +16,35 @@ body {
 
 
 nav {
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  
   color: white;
-  padding: 2rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right:40px;
-  margin-top: 20px;
+  margin-top: 40px;
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
   
-  
+
 }
 
 nav h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding-left: 100px;
+  display: inline;
+  font-size: 28px;
 }
 
 .navul {
-  list-style: none;
   display: flex;
-  gap: 3rem;
-  
+
+  width: 50%;
+  margin-left: auto;
+  font-size: 20px;
+  justify-content: space-between;
+
 }
 
 .navli {
-  font-size: 1.3rem;
+  display: inline;
+
 }
 
 .navlink {
@@ -57,39 +58,58 @@ nav h1 {
   text-decoration: #68bafd;
 }
 
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 0;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
-  
+.myimage img:hover{
+  transform: rotate3d(1, 1, 0 ,20deg);
 }
 
 
+.content {
+  
+  margin-top: 0px;
+  display: flex;
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+
+
+}
+
 .writting {
-  flex: 1;
-  min-width: 300px;
-  padding: 2rem;
+  
+  width: 65%;
+  padding-top: 80px;
+
+}
+
+.myimage {
+  /*border: green 3px solid;*/
+  width: 35%;
+  padding-left: 4%;
+  padding-top: 6%;
+}
+
+.myimage img {
+  height: 80%;
+  width: 90%;
+  
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(120, 240, 240, 0.989);
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
 }
 
 .hello {
   font-size: 2.2rem;
   color: white;
-  
+
 }
 
 .name {
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  
+
 }
 
 .depa {
@@ -105,115 +125,109 @@ nav h1 {
   line-height: 1.6;
 }
 
-.myimage {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-  margin-top: 0px;
-  transition: transform 0.7s ease;
-  transform-style: preserve-3d;
+.links {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 60px;
+  /*border: black 2px solid;*/
+  justify-content: space-between;
+  width: 55%;
 }
 
-.myimage img {
-  max-width: 75%;
-  height: auto;
+.links img, .linkscontact img{
+  height: 30px;
+
+}
+
+.fb {
   border-radius: 50%;
-  box-shadow: 0 0 50px rgba(120, 240, 240, 0.989);
+  margin-right: 20px;
+  margin-left: 0px;
+  box-shadow: 0 0 12px 3px #68bafd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
-  
-.myimage:hover{
-  transform: rotate3d(1, 1, 0 ,20deg);
-}
-
-
-.links{
-    display: flex;
-    margin-left: 20px;
-    margin-top: 0;
-    
-}
-
-.links img{
-    height: 30px;
 
 }
-.fb{
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 110px;
-    box-shadow: 0 0 12px 3px #68bafd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    
-}
 
-.fb:hover,.tele:hover ,.git:hover,.medium:hover,.whatsapp:hover,.cvbutton:hover{
+.fb:hover,
+.tele:hover,
+.git:hover,
+.medium:hover,
+.whatsapp:hover,
+.cvbutton:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px 2px #68bafd;
 }
 
 
-.tele,.git,.cvbutton{
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 10px;
-    box-shadow: 0 0 12px 3px #68bafd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+.tele,
+.git,
+.cvbutton {
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 10px;
+  box-shadow: 0 0 12px 3px #68bafd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.git,.fb,.tele,.medium,.whatsapp,.cvbutton{
+.git,
+.fb,
+.tele,
+.medium,
+
+.cvbutton {
   border-color: #68bafd;
   border-width: 3px;
   border-style: solid;
 }
 
-.medium,.whatsapp{
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
-    margin-left: 10px;
-    box-shadow: 0 0 12px 3px #68bafd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+.medium {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
+  box-shadow: 0 0 12px 3px #68bafd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.cvbutton{
+.cvbutton {
   height: 33px;
   border-radius: 15px;
   font-size: 15px;
 }
 
-.aboutme{
-  margin-top: 50px;
-  margin-bottom: 80px;
-  display: flex;
-  border-color: blue;
-  border-style: none;
-  border-width: 2px;
-  background: linear-gradient(90deg, #588ebb, #2d56de);
-  padding-top: 30px;
-  padding-bottom: 30px;
+.aboutme {
+  /*border: blue 2px solid;*/
   
-  margin-left: 80px;
-  margin-right: 50px;
-  border-radius: 30px;
 }
-
-.abouth1{
+.about{
+  /*border: red 2px solid;*/
+  
+  margin-bottom: 40px;
+  display: flex;
+  
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.abouth1 {
   text-align: center;
   margin-top: 10px;
   font-family: sans-serif;
   margin-bottom: 20px;
 }
 
-.codinggirl{
-  width: 350px;
+.codinggirl {
+  width: 30%;
   margin: auto;
   height: 350px;
-  margin-left: 120px;
+  
   border-radius: 50%;
   border-width: 5px;
   border-color: #1a90f1;
@@ -221,115 +235,220 @@ nav h1 {
   box-shadow: 0 0 24px 10px #68bafd;
 }
 
-.aboutdiv{
+.aboutdiv {
+  
+  border-width: 2px;
+  /*border-color: blueviolet;*/
+  border-style: none;
   width: 60%;
-  border-width: 0;
-  border-color: none;
-  border-style: solid;
-  margin-right: 70px;
-  margin-left: 70px;
-  background: linear-gradient(90deg, #1f3053, #3158d8);
+  
+  background: linear-gradient(90deg, rgb(2, 2, 116), rgb(49, 49, 214),rgb(87, 136, 226));
   font-size: 10px;
   transition: transform 0.7s ease;
   transform-style: preserve-3d;
   border-radius: 30px;
   cursor: pointer;
   padding: 20px;
-  
+
 }
 
 .aboutdiv:hover {
-      transform: rotate3d(1, 1, 0, 20deg); /* Makes the box slightly larger */
-      
-    }
+  transform: rotate3d(1, 1, 0, 20deg);
+  /* Makes the box slightly larger */
 
-.aboutmepara{
+}
+
+.aboutmepara {
   font-size: 17px;
 }
 
+.contact{
+  /*border: red 2px solid;*/
+  width: 86%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.details{
+  /*border: yellow 2px solid;*/
+  width: 45%;
+  
+}
 
 
+.formdetils{
+  /*border: purple 2px solid;*/
+  width: 55%;
+}
 
-/*
- 
-    <style>
-        
-        @media (max-width: 1024px) {
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+.fbcontact {
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 0px;
+  cursor: pointer;
 
-            .navul {
-                flex-direction: column;
-                gap: 1rem;
-                padding-left: 100px;
-            }
+}
 
-            .content {
-                flex-direction: column;
-                align-items: center;
-                padding: 2rem 1rem;
-            }
+.telecontact, .gitcontact {
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 10px;
+  
+  cursor: pointer;
+}
 
-            .writting, .myimage {
-                padding: 1rem;
-                text-align: center;
-            }
+.mediumcontact {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
-            .aboutme {
-                flex-direction: column;
-                align-items: center;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
+.fbcontact:hover, .telecontact:hover, .gitcontact:hover, .mediumcontact:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 2px #68bafd;
+}
 
-            .codinggirl {
-                margin: 0 auto 20px auto;
-            }
+.linkscontact {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 30px;
+  /*border: black 2px solid;*/
+  justify-content: space-between;
+  width: 45%;
+}
 
-            .aboutdiv {
-                width: 90%;
-                margin: 0 auto;
-            }
+.buttoncontact{
+  background-color: rgb(40, 85, 232); 
+  color: white; 
+  height: 35px; 
+  cursor: pointer; 
+  margin-top: 20px; 
+  width: auto; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  border-radius: 10px; 
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.buttoncontact:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 2px #68bafd;
+}
 
-            .links {
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 20px auto;
-            }
-        }
+.form input, .form textarea{
+  display: block;
+  width: 80%;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.form input,textarea{
+  height: 45px;
+  margin-bottom: 20px;
+}
+.form textarea{
+  height: 100px;
+}
 
-        @media (max-width: 480px) {
-            nav h1 {
-                font-size: 1.5rem;
-                padding-left: 20px;
-            }
+.submitbtn{
+  background-color: rgb(40, 85, 232); 
+  color: white; 
+  height: 35px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  border-radius: 10px; 
+  border: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+.submitbtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 2px #68bafd;
+}
 
-            .navli {
-                font-size: 1rem;
-            }
+.education{
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  border: blue 2px solid;
+  
+}
 
-            .hello {
-                font-size: 1.5rem;
-            }
+.edu{
+  width: 100%;
+  display: flex;
+  
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border: red 2px solid;
+  margin-left: auto;
+  margin-right: auto;
 
-            .name {
-                font-size: 2rem;
-            }
+}
 
-            .depa {
-                font-size: 1.2rem;
-            }
+.child{
 
-            .bio {
-                font-size: 0.9rem;
-            }
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: linear-gradient(90deg, rgb(9, 9, 179), rgb(49, 49, 214),rgb(87, 136, 226));
+  padding: 20px;
+  transition: 0.3s ease;
+}
 
-            .aboutmepara {
-                font-size: 14px;
-            }
-        }
-    </style>
-    
-*/
+ .child:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+
+    /*var sheetName = 'Sheet1'
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup () {
+  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost (e) {
+  var lock = LockService.getScriptLock()
+  lock.tryLock(10000)
+
+  try {
+    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+    var sheet = doc.getSheetByName(sheetName)
+
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+    var nextRow = sheet.getLastRow() + 1
+
+    var newRow = headers.map(function(header) {
+      return header === 'timestamp' ? new Date() : e.parameter[header]
+    })
+
+    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  catch (e) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+      .setMimeType(ContentService.MimeType.JSON)
+  }
+
+  finally {
+    lock.releaseLock()
+  }
+}*/

@@ -21,15 +21,18 @@
                     <li class="navli"><a href="#home" class="navlink">Home</a></li>
                     <li class="navli"><a href="#about" class="navlink">About</a></li>
                     <li class="navli"><a href="#portfolio" class="navlink">Portfolio</a></li>
-                    <li class="navli"><a href="#academics" class="navlink">Academics</a></li>
-                    <li class="navli"><a href="#xontacts" class="navlink">Contacts</a></li>
+                    <li class="navli"><a href="#education" class="navlink">Education</a></li>
+                    <li class="navli"><a href="#Contacts" class="navlink">Contacts</a></li>
                 </ul>
             </nav>
     </header>
 
     <div class="content">
         <div class="writting">
-            <p class="hello">Hello It's Me</p>
+            <p class="hello">
+                <span style="color: white; font-weight: bold;">Hello</span>
+                <span style="color: blue; font-weight: bold;">It's Me</span>
+            </p>
             <p class="name">NALINA.G</p>
             <p class="depa">And I am a Computer Science and Engineer</p>
             <p class="bio">Front-end web enthusiast & CSE student • HTML/CSS/JS • Python, C++, Java • building
@@ -44,7 +47,8 @@
                         alt="github image" class="git"></a>
                 <a href="https://medium.com/@entrepreneurss2003" target="_blank"><img src="images/medium.png"
                         alt="medium image" class="medium"></a>
-                <a href="CV -Nalina Genkeswaran.pdf (1).pdf" download="CV.pdf"><button class="cvbutton">Click to see
+                <a href="CV -Nalina Genkeswaran.pdf (1).pdf" download="CV.pdf"><button class="cvbutton"
+                        style="width: auto;">Click to see
                         CV</button></a>
             </div>
         </div>
@@ -61,30 +65,69 @@
 
     <section class="section" id="about">
         <div class="aboutme">
-            <img src="images/coding with girl.jpeg" alt="coding with girl" class="codinggirl">
-            <div class="aboutdiv">
-                <h1 class="abouth1">Hi, I'm Nalina Genkeswaran, a passionate Computer Science and Engineering student
-                    from
-                    Jaffna, Sri Lanka.</h1>
-                <p class="aboutmepara">I earned 3A’s in the GCE A/L exams in 2023 and was ranked first at the school
-                    level. I'm skilled in HTML, CSS, JavaScript, Python, Java, and C++. My passion for front-end
-                    development grew from my love of creating intuitive user experiences, and I am currently expanding
-                    my expertise into full-stack development and cybersecurity. I worked as a front-end developer with
-                    the Mora Exam Committee, contributing as one of six team members. Beyond coding, I enjoy
-                    participating in hackathons and engaging with tech communities to sharpen my skills. I am a strong
-                    believer in teamwork and problem-solving, constantly seeking new challenges that push me to grow.
-                    Looking forward, I aim to become a cybersecurity specialist and full-stack developer, building
-                    secure and impactful applications. Feel free to explore my projects, connect with me on GitHub or
-                    Medium, or reach out if you’d like to collaborate.</p>
-            </div>
+            <h1 style="text-align: center;">
+                <span style="color: white; font-size: 45px;">ABOUT</span>
+                <span style="color: blue; font-size: 45px;">ME</span>
+            </h1>
+     
+            <div class="about">
 
+
+                <img src="images/coding with girl.jpeg" alt="coding with girl" class="codinggirl">
+                <div class="aboutdiv">
+                    <h1 class="abouth1">Hi, I'm Nalina Genkeswaran, a passionate Computer Science and Engineering
+                        student
+                        from
+                        Jaffna, Sri Lanka.</h1>
+                    <p class="aboutmepara">I earned 3A’s in the GCE A/L exams in 2023 and was ranked first at the school
+                        level. I'm skilled in HTML, CSS, JavaScript, Python, Java, and C++. My passion for front-end
+                        development. I worked as a front-end developer
+                        with
+                        the Mora Exam Committee, contributing as one of six team members. Beyond coding, I enjoy
+                        participating in hackathons and engaging with tech communities to sharpen my skills. I am a
+                        strong
+                        believer in teamwork and problem-solving, constantly seeking new challenges that push me to
+                        grow.
+                        Looking forward, I aim to become a cybersecurity specialist and full-stack developer, building
+                        secure and impactful applications. Feel free to explore my projects, connect with me on GitHub
+                        or
+                        Medium, or reach out if you’d like to collaborate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="education">
+        <div class="education">
+            <h1 style="font-size: 40px; text-align: center;">EDUCATION</h1>
+            <div class="edu">
+                <div class="child">
+                    <p>During my secondary education, I consistently excelled in academics. In the GCE Ordinary Level
+                        examination, I secured 9A's and ranked first in my school. Continuing this success, I achieved
+                        3A's in the Advanced Level examination under the Mathematics stream, once again becoming the
+                        school topper. </p>
+                </div>
+
+                <div class="child">
+                    <p>I am currently pursuing my engineering degree at Sri Lanka’s No. 1 engineering university. In my
+                        first semester, I achieved a GPA of 3.59, which led to my selection for the highly competitive
+                        Computer Science and Engineering department. I am now continuing my academic journey in the second semester.</p>
+                </div>
+
+                <div class="child">
+                    <p>I have intermediate-level programming skills in Python, Java, and C++, and beginner-level
+                        experience in Go and React. I am also gaining hands-on experience with TypeScript and React while working as a
+                        frontend developer for the Mora Exam website and its Finance Dashboard.</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section class="section" id="Contacts">
         <div class="contact">
             <div class="details">
-                <h2 class="contacth2" style="font-size: 35px;">Contact Me</h2>
+                <h2 class="contacth2" style="font-size: 45px;">Contact Me</h2>
                 <p style="margin-top: 20px;">📧 nalinanalina995@gmail.com</p>
                 <p style="margin-top: 15px;">📞 0762791032</p>
 
@@ -107,27 +150,16 @@
 
             <div class="formdetils">
                 <form class="form">
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <textarea placeholder="Your message"></textarea>
+                    <input type="text" placeholder="Your name" name="name">
+                    <input type="email" placeholder="Your email" name="email">
+                    <textarea placeholder="Your message" name="message"></textarea>
+                    <button class="submitbtn">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="section" id="portfolio">
-        <div>
-            <h1>fgfgf</h1>
-            <h2>fgfggfg</h2>
-            <h3>fgfgdfgfdgfdg</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem consequuntur quas, neque dicta quae,
-                veritatis, veniam perferendis est fugit cumque sapiente dolorum praesentium pariatur rerum sit.
-                Aspernatur,
-                blanditiis sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error autem suscipit sit
-                voluptate quasi ipsa, laudantium rem consectetur illo ratione repudiandae, commodi eum, voluptatum atque
-                accusamus. Quidem quisquam accusamus ea?</p>
-        </div>
-    </section>
+
 
 
 </body>
@@ -140,7 +172,7 @@
         let current = "";
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 100;
+            const sectionTop = section.offsetTop -100;
             const sectionHeight = section.clientHeight;
             if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 current = section.getAttribute("id");
