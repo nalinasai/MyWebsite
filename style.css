@@ -13,7 +13,6 @@ body {
 
 
 
-
 nav {
   
   color: white;
@@ -34,7 +33,7 @@ nav h1 {
 .navul {
   display: flex;
 
-  width: 40%;
+  width: 50%;
   margin-left: auto;
   font-size: 20px;
   justify-content: space-between;
@@ -450,3 +449,69 @@ nav h1 {
       cursor: pointer;
     }
 
+
+    .container{
+      width: 600px;
+      height: 500px;
+      padding: 75px 90px;
+      margin-left: 120px;
+    }
+
+    .heading{
+      text-align: center;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+      text-decoration-thickness: 5px;
+      margin-bottom: 50px;
+
+    }
+
+    .bar{
+      font-size: 23px;
+
+    }
+
+    .technical-Bars.bars{
+      margin: 40px 0;
+    }
+
+    .technical-Bars.bars.first-child{
+      margin-top: 0;
+    }
+    .technical-Bars.bars.last-child{
+      margin-bottom: 0;
+    }
+
+    .technical-Bars.bars.info{
+      margin-bottom: 5px;
+    }
+
+    .technical-Bars.bars.info span{
+      font-size: 17px;
+      font-weight: 500;
+      animation: showText 0.5s 1s linear forwards;
+    }
+
+    .technical-Bars.bars.programline{
+      position: relative;
+      border-radius: 10px;
+      width: 100%;
+      height: 5px;
+      background-color: red;
+      animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+      transform: scale(0);
+      transform-origin: left;
+
+    }
+
+    @keyframes animate{
+      100%{
+        transform: scale(1);
+      }
+    }
+
+    .technical-Bars.bars.programline span{
+      height: 100%;
+      background-color: #0ef;
+      position: absolute;
+    }
