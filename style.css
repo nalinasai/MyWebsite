@@ -28,11 +28,12 @@ nav {
 nav h1 {
   display: inline;
   font-size: 28px;
+  margin-top: 15px;
 }
 
 .navul {
   display: flex;
-
+  margin-top: 15px;
   width: 50%;
   margin-left: auto;
   font-size: 20px;
@@ -63,7 +64,7 @@ nav h1 {
 
 .content {
   
-  margin-top: 0px;
+  margin-top: 40px;
   display: flex;
   width: 86%;
   margin-left: auto;
@@ -218,6 +219,9 @@ nav h1 {
 
 .aboutme {
   /*border: blue 2px solid;*/
+  margin-top: 40px;
+  margin-bottom: 150px;
+  padding-top: 50px;
   
 }
 .about{
@@ -416,6 +420,15 @@ nav h1 {
   /* height: 500px; */
   margin-bottom: 100px;
   margin-top: 80px;
+  
+}
+
+.education-child-h1{
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
   
 }
 
