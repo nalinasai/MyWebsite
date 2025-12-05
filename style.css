@@ -425,7 +425,7 @@ nav h1 {
 
 .education-child-h1{
   font-size: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
@@ -455,6 +455,7 @@ nav h1 {
   box-shadow: 0 0 24px 10px #68bafd;
   padding: 20px;
   transition: 0.3s ease;
+  width: 40%;
 }
 
  .child:hover {
