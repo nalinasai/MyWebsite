@@ -272,7 +272,7 @@
 
   </div>
 
-  <!-- ✅ ONE CENTER BUTTON -->
+  <!-- ONE CENTER BUTTON -->
   <div class="projects-footer">
     <a href="https://github.com/nalinasai" target="_blank" class="view-more-btn">
       View more on GitHub
@@ -370,10 +370,10 @@
   </section>
 
 
-  <section class="section" id="Contacts">
+  <!-- <section class="section" id="Contacts">
     <div class="contact">
 
-      <!-- Contact Details -->
+      
       <div class="details">
         <h2 class="contacth2">
           <span style="color: #3b82f6;">Contact</span>
@@ -392,7 +392,7 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
+      
       <div class="form-container">
         <form class="form" id="contactForm">
           <input type="text" placeholder="Your name" name="name" required>
@@ -406,7 +406,34 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
+
+  <section class="contact" id="Contacts">
+  <div class="contact-container">
+    <h2 class="section-title"><span>Contact</span> Me</h2>
+
+    <div class="contact-details">
+      <p>📧 <a href="mailto:nalinanalina995@gmail.com">nalinanalina995@gmail.com</a></p>
+      <!-- <p>📞 <a href="tel:+94762791032">+94 76 279 1032</a></p> -->
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/nalinasai" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nalina-genkeswaran1007/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://web.facebook.com/people/Nalina-Genkeswaran/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://t.me/Nalina1007" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="Nalina-Genkeswaran.pdf" download class="btn">Download CV</a>
+      <a href="Nalina-Genkeswaran.pdf" target="_blank" class="btn-outline">View CV</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Back to Top Button -->
+<a href="#home" class="arrowlink"><i class="fas fa-arrow-up"></i> Back to Top</a>
+
 
   <footer class="footer">
     <div class="footer-container">
@@ -423,9 +450,9 @@
 </body>
 
 <script>
-// =======================
+
 // Smooth Scroll + Active Nav
-// =======================
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navlink");
 
@@ -462,9 +489,8 @@ window.addEventListener("scroll", () => {
 });
 
 
-// =======================
 // Rotating Roles
-// =======================
+
 const roles = ["Computer Science & Engineer", "Full-Stack Developer", "Android Developer", "Backend Enthusiast"];
 let index = 0;
 const roleElement = document.getElementById("dynamic-role");
