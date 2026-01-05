@@ -27,6 +27,15 @@ body {
   color: var(--text);
   line-height: 1.6;
   padding-top: 80px;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.section {
+  scroll-margin-top: 100px;
 }
 
 
@@ -75,6 +84,52 @@ nav h1 {
 .navlink.active {
   color: var(--primary);
 }
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  nav {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .navul {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(2, 2, 38, 0.98);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transition: right 0.4s ease;
+  }
+
+  .navul.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 
 /* =======================
    HERO SECTION
@@ -282,6 +337,15 @@ nav h1 {
   }
 }
 
+section {
+  scroll-margin-top: 90px; 
+}
+
+
+.container-skills .heading,
+.container-circle .heading {
+  font-size: clamp(20px, 5vw, 28px);
+}
 
 /* ABOUT SECTION */
 .about-container {
@@ -292,7 +356,7 @@ nav h1 {
 
 .section-title {
   text-align: center;
-  font-size: 45px;
+  font-size: clamp(28px, 6vw, 45px);
   margin-bottom: 40px;
 }
 
@@ -928,30 +992,48 @@ nav h1 {
 
 
 .arrowlink {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+
   font-weight: 600;
   color: var(--primary);
   text-decoration: none;
   font-size: 1rem;
+
+  background: rgba(31, 41, 55, 0.85);
+  padding: 10px 14px;
+  border-radius: 30px;
+
   transition: all 0.3s ease;
-  font-size: large;
-  margin-left: 80%;
-  margin-bottom: 50px;
+  z-index: 9999;
 }
 
 .arrowlink i {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: transform 0.3s ease;
 }
 
 .arrowlink:hover {
-  color: white;
+  color: #fff;
+  background: var(--primary);
 }
 
 .arrowlink:hover i {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .arrowlink {
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
 }
 
 /* RESPONSIVE */
@@ -1024,3 +1106,63 @@ nav h1 {
     width: 100%;
   }
 }
+
+
+/* tablets */
+@media (max-width: 1024px) {
+  .my-skills {
+    gap: 30px;
+  }
+
+  .container-skills,
+  .container-circle {
+    flex: 1 1 100%;
+  }
+}
+
+/* phones */
+@media (max-width: 768px) {
+  .my-skills {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .technical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .professional-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .bar {
+    padding: 14px;
+  }
+}
+
+/* small phones */
+@media (max-width: 480px) {
+  .professional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radial_bar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .radial_bar svg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .percentage {
+    font-size: 16px;
+  }
+}
+

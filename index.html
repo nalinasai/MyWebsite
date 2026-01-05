@@ -15,16 +15,23 @@
 
 <nav>
   <h1>portfolio</h1>
-  <ul class="navul">
+
+  <ul class="navul" id="navMenu">
     <li class="navli"><a href="#home" class="navlink">Home</a></li>
     <li class="navli"><a href="#about" class="navlink">About</a></li>
-
     <li class="navli"><a href="#education" class="navlink">Education</a></li>
     <li class="navli"><a href="#projects" class="navlink">Projects</a></li>
     <li class="navli"><a href="#skills" class="navlink">Skills</a></li>
     <li class="navli"><a href="#Contacts" class="navlink">Contacts</a></li>
   </ul>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
+
 
 <body id="home">
   <header>
@@ -605,6 +612,21 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(skillsSection);
 </script>
 
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+/* Close menu on link click */
+document.querySelectorAll(".navlink").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
+</script>
 
 
 
