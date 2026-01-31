@@ -275,25 +275,28 @@ nav h1 {
   flex: 1 1 300px;
   text-align: center;
   margin: 20px;
-  transition: transform 0.3s ease;
 }
 
 .myimage img {
-  width: 280px;
-  height: 280px;
+  width: 300px;          
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
+
   margin-top: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border: 5px solid #ffffff; /* subtle white border */
-  transition: all 0.4s ease;
+  border: 3px solid #ffffff;
+  transform: none;
+  backface-visibility: visible;
+  image-rendering: auto;
+  transition: box-shadow 0.25s ease;
 }
+
 
 /* Hover effect */
 .myimage img:hover {
-  transform: scale(1.05) rotate(3deg);
+  transform: scale(1.02);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-  border-color: #ff6b6b; /* optional color change on hover */
 }
 
 
