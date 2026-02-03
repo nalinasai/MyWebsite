@@ -136,6 +136,7 @@ nav h1 {
   nav {
     height: 80px;
     padding: 0 20px;
+  
   }
 
   .navul {
@@ -156,9 +157,7 @@ nav h1 {
     right: 0;
   }
 
-  .menu-toggle {
-    display: flex;
-  }
+  
 }
 
 
@@ -1162,14 +1161,14 @@ section {
 
 
 
-/* =======================
-   RESPONSIVE
-======================= */
+
+   /* RESPONSIVE */
 @media (max-width: 768px) {
 
   nav {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .content {
@@ -1201,6 +1200,22 @@ section {
   .details,
   .formdetils {
     width: 100%;
+  }
+  h1{
+
+    margin: 20px;
+  }
+  .menu-toggle{
+    margin: 15px;
+  }
+  
+  .navul{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navul.active{
+    display: flex;
   }
 }
 
