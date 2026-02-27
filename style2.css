@@ -1346,6 +1346,60 @@ section {
   margin-bottom: 100px;
 }
 
+.daily-thoughts-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.daily-thoughts-box h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.daily-thoughts-box p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.blog-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.blog-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.5);
+}
+
+/* Back Navigation Link */
+.thought-back {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 20px 5%;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.thought-back:hover {
+  color: var(--primary);
+}
+.blog-desc {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 15.5px;
+}
 
 
 /* Blog Card */
